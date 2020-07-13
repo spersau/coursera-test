@@ -1,0 +1,93 @@
+.styles {
+  color: #313437;
+  background-color: #eef4f7;
+}
+
+.styles p {
+  color: #7d8285;
+}
+
+.styles h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
+}
+
+@media (max-width:767px) {
+  .styles h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
+}
+
+.styles .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.styles .intro p {
+  margin-bottom: 0;
+}
+
+.styles .people {
+  padding: 50px 0 20px;
+}
+
+.styles .item {
+  margin-bottom: 32px;
+}
+
+@media (min-width:768px) {
+  .styles .item {
+    height: 220px;
+  }
+}
+
+.styles .item .box {
+  padding: 30px;
+  background-color: #fff;
+  position: relative;
+}
+
+.styles .item .box:after {
+  content: '';
+  position: absolute;
+  left: 30px;
+  bottom: -24px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-width: 12px 15px;
+  border-top-color: #fff;
+}
+
+.styles .item .author {
+  margin-top: 28px;
+  padding-left: 25px;
+}
+
+.styles .item .name {
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: inherit;
+}
+
+.styles .item .title {
+  font-size: 13px;
+  color: #9da9ae;
+}
+
+.styles .item .description {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.styles .item img {
+  max-width: 40px;
+  float: left;
+  margin-right: 12px;
+  margin-top: -5px;
+}
