@@ -1,10 +1,17 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
+
 <meta charset="utf-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<link rel= "stylesheet" type="text/css" href="css/styles.css">
+
 <title>Mod 2 Solution</title>
+
 <style>
 
 h2 {
@@ -14,13 +21,16 @@ h2 {
 * {
 	box-sizing: border-box;
 }
+
 h1 {
+
 	font-family: Brushstroke;
 	color: solid black;
 	text-align: center;
 }
 
 p {
+
 	border: 2px solid black;
 	background-color: gray;
 	width: 90%;
@@ -33,6 +43,7 @@ p {
 }
 
 .container {
+
 	border: none;
 	margin-left: auto;
 	margin-right: auto;
@@ -41,7 +52,19 @@ p {
 	padding: 10px;
 
 }
+
+section {
+	border: 1px solid black;
+	width: 100%;
+	height: 200px;
+	font-family: Helvetica;
+	color: black;
+	position: relative;
+	overflow: auto;
+}
+
 #Chicken {
+
 	border: 1px solid black;
 	text-align: center;
 	width: 30%;
@@ -55,7 +78,9 @@ p {
 	background-color: pink;
 }
 
+
 #Beef {
+
 	border: 1px solid black;
 	text-align: center;
 	width: 30%;
@@ -69,7 +94,9 @@ p {
 	background-color: red;
 }
 
+
 #Sushi {
+
 	border: 1px solid black;
 	text-align: center;
 	width: 30%;
@@ -83,14 +110,18 @@ p {
 	background-color: yellow;
 }
 
+
 .row {
 	width: 100%;
 }
 
+
 /* Desktop view */
 
 @media (min-width: 992px) {
+
 	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7 .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+
 		float: left;
 	}
 	.col-lg-1 {
@@ -133,8 +164,10 @@ p {
 
 /* Tablet view */
 
-@media (min-width: 992px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
+
 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7 .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+
 		float: left;
 	}
 	.col-md-1 {
@@ -175,11 +208,12 @@ p {
 	}
 }
 
-
 /* Mobile view */
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+
 	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7 .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+
 		float: left;
 	}
 	.col-sm-1 {
@@ -223,9 +257,10 @@ p {
 </style>
 </head>
 <body>
+
 <h1>Our Menu</h1>
 <div class='row'>
-	<div class="col-lg-4 col-md-6 col-sm-12">
+	<div class="container col-lg-4 col-md-6 col-sm-12">
 		<section>
 		<div id= "Chicken">
 			Chicken
@@ -233,8 +268,9 @@ p {
 		<p>
 			Here are our options for Chicken dinners on the menu.
 		</p>
+	</section>
 	</div>
-	<div class="col-lg-4 col-md-6 col-sm-12">
+	<div class="container col-lg-4 col-md-6 col-sm-12">
 		<section>
 		<div id= "Beef">
 			Beef
@@ -242,8 +278,9 @@ p {
 		<p>
 			Here are our options for Beef dinners on the menu.
 		</p>
+		</section>
 	</div>
-	<div class="col-lg-4 col-md-6 col-sm-12">
+	<div class="container col-lg-4 col-md-6 col-sm-12"
 		<section>
 		<div id= "Sushi">
 			Sushi
@@ -252,6 +289,6 @@ p {
 			Here are our options for Sushi dinners on the menu.
 		</p>
 	</div>
-
+</section>
 </body>
 </html>
