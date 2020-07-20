@@ -68,7 +68,7 @@ WARNING!!! WARNING!!!
 
 // (Note, Step 2 will be done in the SpeakHello.js file.)
 
-(function () {
+(function (window) {
 
 
 
@@ -120,16 +120,16 @@ for (var i = 0; i < names.length; i++) {
 
   if (firstLetter === 'j') {
 
-    byeSpeaker(names[i]);
+    window.byeSpeaker.speak(names[i]);
 
   } 
   else {
 
-    helloSpeaker(names[i]);
+    window.helloSpeaker.speak(names[i]);
 
   }
 
 }
 
 
-})();
+})(window);
